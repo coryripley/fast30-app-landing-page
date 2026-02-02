@@ -649,8 +649,11 @@ export default function App() {
                   @media (max-width: 768px) {
                     .hero-device { 
                       width: 100% !important;
-                      height: 70vh !important;
+                      height: 85vh !important;
                       position: relative !important;
+                      display: flex !important;
+                      justify-content: center !important;
+                      align-items: center !important;
                     }
                   }
                 `}} />
