@@ -190,21 +190,6 @@ export default function App() {
           animation: breathe 4s ease-in-out infinite;
         }
 
-        /* CRITICAL: Override Tailwind preflight for hero phone on mobile */
-        @media (max-width: 768px) {
-          img#hero-phone-final {
-            width: 85vw !important;
-            height: auto !important;
-            max-width: none !important;
-            max-height: none !important;
-            position: absolute !important;
-            top: 10px !important;
-            left: 50% !important;
-            transform: translateX(-50%) !important;
-            object-fit: contain !important;
-          }
-        }
-
         /* Header / Navigation Mobile Stack */
         @media (max-width: 768px) {
           .nav-container {
@@ -699,51 +684,49 @@ export default function App() {
                 </div>
                 {/* Media / Device / Hand Holding Phone */}
                 {/* Device Screen / Welcome Back – Progress Dashboard */}
-                <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 10, position: 'relative' }}>
-                  <img 
+                <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 10 }}>
+                  <div
                     id="hero-phone-final"
-                    className="heroPhoneImg"
-                    src={mediaDeviceHandHoldingPhone}
-                    alt="FAST30 App Dashboard"
-                    style={{ position: 'relative', zIndex: 10 }}
+                    className="heroPhone"
+                    style={{
+                      backgroundImage: `url(${mediaDeviceHandHoldingPhone})`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat',
+                      width: '600px',
+                      height: '970px',
+                    }}
+                    aria-label="FAST30 App Dashboard"
                   />
                   <style>{`
                     @media (min-width: 769px) {
                       .hero-phone-wrapper {
                         margin-top: 20px;
+                        position: relative;
                       }
-                      .heroPhoneImg {
-                        width: auto;
-                        height: auto;
-                        max-width: 100%;
-                        max-height: 970px;
-                        object-fit: contain;
+                      .heroPhone {
+                        width: 600px;
+                        height: 970px;
                       }
                     }
                     @media (min-width: 1200px) {
-                      .heroPhoneImg {
-                        max-height: 1080px;
+                      .heroPhone {
+                        width: 700px;
+                        height: 1080px;
                       }
                     }
                     @media (max-width: 768px) {
                       .hero-phone-wrapper {
-                        position: absolute !important;
-                        top: 0 !important;
-                        left: 0 !important;
+                        position: relative !important;
                         width: 100% !important;
-                        height: 100% !important;
-                        display: block !important;
+                        display: flex !important;
+                        justify-content: center !important;
+                        align-items: center !important;
                       }
-                      .heroPhoneImg {
-                        width: 350px !important;
-                        height: 700px !important;
-                        max-width: none !important;
-                        max-height: none !important;
-                        position: absolute !important;
-                        top: 10px !important;
-                        left: 50% !important;
-                        transform: translateX(-50%) !important;
-                        object-fit: contain !important;
+                      .heroPhone {
+                        width: 90vw !important;
+                        height: 80vh !important;
+                        position: relative !important;
                       }
                     }
                   `}</style>
