@@ -221,11 +221,10 @@
   overflow: hidden;
 
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 50%;
   background-size: contain;
 
   transform: translateZ(0);
-  image-rendering: -webkit-optimize-contrast;
 }
 
 .heroPhone::before {
@@ -238,30 +237,16 @@
   background-position: 50% 50%;
   background-size: contain;
 
-  transform: translateX(3%) translateY(-3%) scale(1.8);
+  transform: translateX(5%) translateY(-5%) scale(2.09);
   transform-origin: center;
 
   will-change: transform;
-  image-rendering: -webkit-optimize-contrast;
 }
 
-/* Large desktop */
-@media (min-width: 1200px) {
+/* Desktop */
+@media (min-width: 768px) {
   .heroPhone::before {
-    transform: translateX(5%) translateY(-5%) scale(2.0);
-  }
-  
-  .heroPhone {
-    max-width: 600px !important;
-    max-height: calc(600px * 19/9 - 250px) !important;
-    margin-top: 50px !important;
-  }
-}
-
-/* Medium desktop */
-@media (min-width: 768px) and (max-width: 1199px) {
-  .heroPhone::before {
-    transform: translateX(5%) translateY(-5%) scale(2.0);
+    transform: translateX(5%) translateY(-5%) scale(2.09);
   }
   
   .heroPhone {
@@ -278,7 +263,7 @@
   }
   
   .heroPhone::before {
-    transform: translateX(5%) translateY(-5%) scale(2.1);
+    transform: translateX(5%) translateY(-5%) scale(2.2);
   }
 }
 

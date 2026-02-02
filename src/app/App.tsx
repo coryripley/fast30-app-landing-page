@@ -689,60 +689,47 @@ export default function App() {
                 </div>
                 {/* Media / Device / Hand Holding Phone */}
                 {/* Device Screen / Welcome Back – Progress Dashboard */}
-                <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 10, position: 'relative' }}>
-                  <img 
+                <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 1 }}>
+                  <div 
                     id="hero-phone-final"
-                    className="heroPhoneImg" 
-                    src={mediaDeviceHandHoldingPhone}
-                    alt="FAST30 App Dashboard"
+                    className="heroPhone" 
                     style={{
-                      width: 'auto',
-                      maxWidth: '700px',
-                      height: 'auto',
-                      maxHeight: '1000px',
-                      objectFit: 'contain',
-                      position: 'relative',
-                      zIndex: 10,
+                      width: 'calc(100vw - 48px)',
+                      maxWidth: '768px',
+                      aspectRatio: '9/19',
+                      height: 'calc((100vw - 48px) * 19/9)',
+                      maxHeight: 'calc(768px * 19/9)',
+                      backgroundImage: `url(${mediaDeviceHandHoldingPhone})`
                     }}
-                  />
-                  <style>{`
-                    @media (min-width: 769px) {
-                      .hero-phone-wrapper {
-                        margin-top: 20px;
+                  >
+                    <style>{`
+                      @media (min-width: 769px) {
+                        .hero-phone-wrapper {
+                          margin-top: 20px;
+                        }
                       }
-                      .heroPhoneImg {
-                        max-width: 700px !important;
-                        max-height: 1000px !important;
+                      @media (max-width: 768px) {
+                        .hero-phone-wrapper {
+                          position: absolute !important;
+                          top: 0 !important;
+                          left: 0 !important;
+                          width: 100% !important;
+                          height: 100% !important;
+                          display: block !important;
+                        }
+                        .heroPhone {
+                          width: 85vw !important;
+                          height: calc(70vh - 25px) !important;
+                          max-width: 85vw !important;
+                          max-height: calc(70vh - 25px) !important;
+                          position: absolute !important;
+                          top: calc(35vh - 10px - 35vh + 12.5px) !important;
+                          left: 50% !important;
+                          transform: translateX(-50%) !important;
+                        }
                       }
-                    }
-                    @media (min-width: 1200px) {
-                      .heroPhoneImg {
-                        max-width: 750px !important;
-                        max-height: 1100px !important;
-                      }
-                    }
-                    @media (max-width: 768px) {
-                      .hero-phone-wrapper {
-                        position: absolute !important;
-                        top: 0 !important;
-                        left: 0 !important;
-                        width: 100% !important;
-                        height: 100% !important;
-                        display: flex !important;
-                        justify-content: center !important;
-                        align-items: flex-start !important;
-                        padding-top: 20px !important;
-                        z-index: 10 !important;
-                      }
-                      .heroPhoneImg {
-                        width: 85vw !important;
-                        max-width: 400px !important;
-                        height: auto !important;
-                        max-height: calc(75vh) !important;
-                        z-index: 10 !important;
-                      }
-                    }
-                  `}</style>
+                    `}</style>
+                  </div>
                 </div>
               </div>
             </div>
