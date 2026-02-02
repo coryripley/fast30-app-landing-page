@@ -689,19 +689,20 @@ export default function App() {
                 </div>
                 {/* Media / Device / Hand Holding Phone */}
                 {/* Device Screen / Welcome Back – Progress Dashboard */}
-                <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 1 }}>
+                <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 10, position: 'relative' }}>
                   <img 
                     id="hero-phone-final"
                     className="heroPhoneImg" 
                     src={mediaDeviceHandHoldingPhone}
                     alt="FAST30 App Dashboard"
+                    style={{ position: 'relative', zIndex: 10 }}
                   />
                   <style>{`
                     .heroPhoneImg {
                       width: auto;
                       height: auto;
                       max-width: 100%;
-                      max-height: 800px;
+                      max-height: 880px;
                       object-fit: contain;
                     }
                     @media (min-width: 769px) {
@@ -709,12 +710,12 @@ export default function App() {
                         margin-top: 20px;
                       }
                       .heroPhoneImg {
-                        max-height: 850px;
+                        max-height: 920px;
                       }
                     }
                     @media (min-width: 1200px) {
                       .heroPhoneImg {
-                        max-height: 900px;
+                        max-height: 980px;
                       }
                     }
                     @media (max-width: 768px) {
@@ -728,12 +729,14 @@ export default function App() {
                         justify-content: center !important;
                         align-items: flex-start !important;
                         padding-top: 10px !important;
+                        z-index: 10 !important;
                       }
                       .heroPhoneImg {
                         width: auto !important;
                         height: calc(75vh) !important;
                         max-width: 90vw !important;
                         max-height: calc(75vh) !important;
+                        z-index: 10 !important;
                       }
                     }
                   `}</style>
