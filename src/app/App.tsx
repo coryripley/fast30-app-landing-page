@@ -687,7 +687,7 @@ export default function App() {
                 <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 10, position: 'relative' }}>
                   <img 
                     id="hero-phone-final"
-                    className="heroPhoneImg" 
+                    className="heroPhoneImg max-w-none" 
                     src={mediaDeviceHandHoldingPhone}
                     alt="FAST30 App Dashboard"
                   />
