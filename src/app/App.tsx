@@ -190,6 +190,21 @@ export default function App() {
           animation: breathe 4s ease-in-out infinite;
         }
 
+        /* CRITICAL: Override Tailwind preflight for hero phone on mobile */
+        @media (max-width: 768px) {
+          img#hero-phone-final {
+            width: 85vw !important;
+            height: auto !important;
+            max-width: none !important;
+            max-height: none !important;
+            position: absolute !important;
+            top: 10px !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            object-fit: contain !important;
+          }
+        }
+
         /* Header / Navigation Mobile Stack */
         @media (max-width: 768px) {
           .nav-container {
@@ -687,9 +702,10 @@ export default function App() {
                 <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 10, position: 'relative' }}>
                   <img 
                     id="hero-phone-final"
-                    className="heroPhoneImg max-w-none" 
+                    className="heroPhoneImg"
                     src={mediaDeviceHandHoldingPhone}
                     alt="FAST30 App Dashboard"
+                    style={{ position: 'relative', zIndex: 10 }}
                   />
                   <style>{`
                     @media (min-width: 769px) {
