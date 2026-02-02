@@ -722,13 +722,13 @@ export default function App() {
                         height: 100% !important;
                         display: block !important;
                       }
-                      #hero-phone-final {
-                        width: 85vw !important;
-                        height: calc(70vh - 25px) !important;
-                        max-width: 85vw !important;
-                        max-height: calc(70vh - 25px) !important;
+                      .heroPhoneImg {
+                        width: 350px !important;
+                        height: 700px !important;
+                        max-width: none !important;
+                        max-height: none !important;
                         position: absolute !important;
-                        top: calc(35vh - 10px - 35vh + 12.5px) !important;
+                        top: 10px !important;
                         left: 50% !important;
                         transform: translateX(-50%) !important;
                         object-fit: contain !important;
