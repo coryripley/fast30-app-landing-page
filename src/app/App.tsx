@@ -696,8 +696,8 @@ export default function App() {
                   />
                   <style>{`
                     .heroPhone {
-                      width: 600px;
-                      height: 970px;
+                      width: 750px;
+                      height: 1200px;
                     }
                     @media (min-width: 769px) {
                       .hero-phone-wrapper {
@@ -707,8 +707,14 @@ export default function App() {
                     }
                     @media (min-width: 1200px) {
                       .heroPhone {
-                        width: 700px;
-                        height: 1080px;
+                        width: 850px;
+                        height: 1350px;
+                      }
+                    }
+                    @media (min-width: 1600px) {
+                      .heroPhone {
+                        width: 950px;
+                        height: 1500px;
                       }
                     }
                     @media (max-width: 768px) {
@@ -731,15 +737,31 @@ export default function App() {
             </div>
 
             {/* Simple Mobile Phone - hidden on desktop */}
-            <div className="mobile-phone-simple" style={{ display: 'flex', justifyContent: 'center' }}>
+            <div className="mobile-phone-simple" style={{ display: 'flex', justifyContent: 'center', position: 'relative' }}>
+              {/* Mobile Glow */}
+              <div 
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  width: '120%',
+                  height: '100%',
+                  background: 'radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0) 70%)',
+                  pointerEvents: 'none',
+                  zIndex: 0,
+                }}
+              />
               <img 
                 src={mediaDeviceHandHoldingPhone}
                 alt="FAST30 App"
                 style={{
-                  width: '95vw',
+                  width: '130vw',
                   maxWidth: 'none',
                   height: 'auto',
                   display: 'block',
+                  position: 'relative',
+                  zIndex: 1,
                 }}
               />
               <style>{`
@@ -751,6 +773,7 @@ export default function App() {
                     display: flex !important;
                     width: 100%;
                     padding: 10px 0;
+                    overflow: hidden;
                   }
                 }
               `}</style>
