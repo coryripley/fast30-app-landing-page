@@ -649,13 +649,13 @@ export default function App() {
                   @media (max-width: 768px) {
                     .hero-device { 
                       width: 100% !important;
-                      height: 70vh !important;
+                      height: auto !important;
                       position: relative !important;
                     }
                     .hero-device img {
-                      width: 85vw !important;
-                      max-width: none !important;
-                      height: auto !important;
+                      width: auto !important;
+                      max-width: 100vw !important;
+                      height: 75vh !important;
                     }
                   }
                 `}} />
