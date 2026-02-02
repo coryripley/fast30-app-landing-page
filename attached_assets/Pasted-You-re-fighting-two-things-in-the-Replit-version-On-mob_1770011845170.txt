@@ -1,0 +1,102 @@
+You’re fighting two things in the Replit version:
+On mobile you’ve set .hero-device to height: auto, so the hero’s height grows to whatever the PNG’s rendered height becomes. That’s why the hand/phone balloons and “pushes into” the next section.
+The phone image sizing is effectively controlled by the #hero-phone-final { … !important } rule, so changing the class (.heroPhoneImg) often appears to do nothing.
+The clean fix is to bring the hero phone block back to the exact Figma Make layout behavior: fixed hero height on mobile (70vh), and the phone positioned absolutely inside that box, with a height cap.
+Fix (recommended): restore the Figma Make hero-phone implementation
+1) In your Hero section, find the block with:
+id="hero-phone-final" and className="heroPhoneImg"
+Replace this whole block:
+<div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 10, position: 'relative' }}>
+  <img
+    id="hero-phone-final"
+    className="heroPhoneImg"
+    src={mediaDeviceHandHoldingPhone}
+    alt="FAST30 App Dashboard"
+    style={{ position: 'relative', zIndex: 10 }}
+  />
+  <style>{`...`}</style>
+</div>
+With this (Figma-style container):
+<div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 10 }}>
+  <div
+    id="hero-phone-final"
+    className="heroPhone"
+    style={{
+      backgroundImage: `url(${mediaDeviceHandHoldingPhone})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'contain',
+      width: 'calc(100vw - 48px)',
+      maxWidth: '768px',
+      aspectRatio: '9/19',
+      height: 'calc((100vw - 48px) * 19/9)',
+      maxHeight: 'calc(768px * 19/9)',
+    }}
+    aria-label="FAST30 App Dashboard"
+  />
+  <style>{`
+    @media (min-width: 769px) {
+      .hero-phone-wrapper { margin-top: 20px; }
+    }
+    @media (max-width: 768px) {
+      .hero-phone-wrapper {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+      }
+      .heroPhone {
+        width: 85vw !important;
+        height: calc(70vh - 25px) !important;
+        max-width: 85vw !important;
+        max-height: calc(70vh - 25px) !important;
+        position: absolute !important;
+        top: calc(35vh - 10px - 35vh + 12.5px) !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+      }
+    }
+  `}</style>
+</div>
+2) Fix the real cause: mobile hero height is currently “auto”
+In the <style dangerouslySetInnerHTML> for .hero-device, change the mobile rule from your current height: auto/min-height: 70vh setup to a fixed height like Figma:
+Find this in your Replit code:
+@media (max-width: 768px) {
+  .hero-device { 
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    min-height: 70vh !important;
+    /* ... */
+  }
+}
+Replace it with:
+@media (max-width: 768px) {
+  .hero-device { 
+    width: 100% !important;
+    height: 70vh !important;
+    position: relative !important;
+  }
+}
+That one change is what prevents the phone asset from dictating the hero’s height (and blowing up like your first screenshot).
+If you want to keep <img> (alternate)
+You can keep the <img> and just change the mobile rule to constrain by height (not width):
+@media (max-width: 768px) {
+  .hero-phone-wrapper { position: absolute !important; inset: 0 !important; display: block !important; }
+  #hero-phone-final {
+    height: calc(70vh - 25px) !important;
+    width: auto !important;
+    max-height: calc(70vh - 25px) !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 2.5px !important;
+    transform: translateX(-50%) !important;
+  }
+}
+Why your resizing “did nothing”
+Because this exists in your Replit code:
+#hero-phone-final { ... !important; max-height: unset !important; }
+So edits to .heroPhoneImg won’t win. Once you switch to the fixed 70vh hero and absolute phone sizing, the phone will snap back to the intended scale (your second screenshot).
+If you paste the exact hero block you currently have in Replit (just that hero-device section), I can mark exactly what lines to replace so you don’t hunt around.

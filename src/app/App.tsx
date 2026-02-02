@@ -257,8 +257,6 @@ export default function App() {
           .hero-section {
             overflow-x: clip !important;
             overflow-y: visible !important;
-            min-height: 100vh !important;
-            padding-bottom: 50vh !important;
           }
         }
       `}</style>
@@ -650,15 +648,9 @@ export default function App() {
                   }
                   @media (max-width: 768px) {
                     .hero-device { 
-                      width: 100vw !important;
-                      max-width: 100vw !important;
-                      height: auto !important;
-                      min-height: 70vh !important;
+                      width: 100% !important;
+                      height: 70vh !important;
                       position: relative !important;
-                      display: flex !important;
-                      justify-content: center !important;
-                      align-items: flex-start !important;
-                      overflow: visible !important;
                     }
                   }
                 `}} />
@@ -723,21 +715,23 @@ export default function App() {
                     }
                     @media (max-width: 768px) {
                       .hero-phone-wrapper {
-                        position: relative !important;
-                        width: 100vw !important;
-                        max-width: 100vw !important;
-                        display: flex !important;
-                        justify-content: center !important;
-                        align-items: flex-start !important;
-                        z-index: 10 !important;
-                        overflow: visible !important;
+                        position: absolute !important;
+                        top: 0 !important;
+                        left: 0 !important;
+                        width: 100% !important;
+                        height: 100% !important;
+                        display: block !important;
                       }
                       #hero-phone-final {
-                        width: calc(100vw - 48px) !important;
-                        height: auto !important;
-                        max-width: unset !important;
-                        max-height: unset !important;
-                        z-index: 10 !important;
+                        width: 85vw !important;
+                        height: calc(70vh - 25px) !important;
+                        max-width: 85vw !important;
+                        max-height: calc(70vh - 25px) !important;
+                        position: absolute !important;
+                        top: calc(35vh - 10px - 35vh + 12.5px) !important;
+                        left: 50% !important;
+                        transform: translateX(-50%) !important;
+                        object-fit: contain !important;
                       }
                     }
                   `}</style>
