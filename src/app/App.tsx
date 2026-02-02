@@ -693,20 +693,18 @@ export default function App() {
                       backgroundSize: 'contain',
                       backgroundPosition: 'center',
                       backgroundRepeat: 'no-repeat',
-                      width: '600px',
-                      height: '970px',
                     }}
                     aria-label="FAST30 App Dashboard"
                   />
                   <style>{`
+                    .heroPhone {
+                      width: 600px;
+                      height: 970px;
+                    }
                     @media (min-width: 769px) {
                       .hero-phone-wrapper {
                         margin-top: 20px;
                         position: relative;
-                      }
-                      .heroPhone {
-                        width: 600px;
-                        height: 970px;
                       }
                     }
                     @media (min-width: 1200px) {
@@ -717,16 +715,16 @@ export default function App() {
                     }
                     @media (max-width: 768px) {
                       .hero-phone-wrapper {
-                        position: relative !important;
-                        width: 100% !important;
-                        display: flex !important;
-                        justify-content: center !important;
-                        align-items: center !important;
+                        position: relative;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                       }
                       .heroPhone {
-                        width: 90vw !important;
-                        height: 80vh !important;
-                        position: relative !important;
+                        width: 90vw;
+                        height: 80vh;
+                        position: relative;
                       }
                     }
                   `}</style>
