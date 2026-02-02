@@ -732,11 +732,12 @@ export default function App() {
                         z-index: 10 !important;
                       }
                       .heroPhoneImg {
-                        width: 100vw !important;
-                        height: auto !important;
+                        width: auto !important;
+                        height: 75vh !important;
                         max-width: 100vw !important;
-                        max-height: 100vh !important;
+                        max-height: none !important;
                         z-index: 10 !important;
+                        object-fit: contain !important;
                       }
                     }
                   `}</style>
