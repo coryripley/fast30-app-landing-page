@@ -221,10 +221,11 @@
   overflow: hidden;
 
   background-repeat: no-repeat;
-  background-position: 60% 50%;
+  background-position: center center;
   background-size: contain;
 
   transform: translateZ(0);
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .heroPhone::before {
@@ -237,30 +238,47 @@
   background-position: 50% 50%;
   background-size: contain;
 
-  transform: translateX(5%) translateY(-5%) scale(2.2); /* back to original */
+  transform: translateX(3%) translateY(-3%) scale(1.8);
   transform-origin: center;
 
   will-change: transform;
+  image-rendering: -webkit-optimize-contrast;
 }
 
-/* Desktop: slightly smaller */
-@media (min-width: 768px) {
+/* Large desktop: minimal scaling */
+@media (min-width: 1200px) {
   .heroPhone::before {
-    transform: translateX(5%) translateY(-5%) scale(2.09); /* back to original */
+    transform: translateX(3%) translateY(-3%) scale(1.7);
   }
   
-  /* Make the div box slightly shorter and thinner on desktop */
   .heroPhone {
-    max-width: 600px !important; /* back to original */
-    max-height: calc(600px * 19/9 - 250px) !important; /* back to original */
-    margin-top: 50px !important; /* keep desktop position as it was */
+    max-width: 550px !important;
+    max-height: calc(550px * 19/9 - 200px) !important;
+    margin-top: 50px !important;
+  }
+}
+
+/* Medium desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .heroPhone::before {
+    transform: translateX(3%) translateY(-3%) scale(1.75);
+  }
+  
+  .heroPhone {
+    max-width: 500px !important;
+    max-height: calc(500px * 19/9 - 180px) !important;
+    margin-top: 40px !important;
   }
 }
 
 /* Mobile: move div up */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .heroPhone {
-    margin-top: -25px !important; /* move entire div up 25px total */
+    margin-top: -25px !important;
+  }
+  
+  .heroPhone::before {
+    transform: translateX(3%) translateY(-3%) scale(1.85);
   }
 }
 
