@@ -264,7 +264,7 @@ export default function App() {
       {/* Header / Navigation */}
       <header className="relative z-20">
         {/* Navigation / Container (Horizontal) */}
-        <div className="nav-container flex items-center justify-between" style={{ paddingLeft: '172px', paddingRight: '60px', paddingTop: '44px', paddingBottom: '24px', marginTop: '0px' }}>
+        <div className="nav-container flex items-center justify-between" style={{ paddingLeft: '132px', paddingRight: '60px', paddingTop: '44px', paddingBottom: '24px', marginTop: '0px' }}>
           {/* Navigation / Left */}
           <div className="nav-left" style={{ height: '63px' }}>
             {/* Navigation / Logo */}
