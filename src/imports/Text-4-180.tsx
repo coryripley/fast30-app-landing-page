@@ -3,7 +3,7 @@ import svgPaths from "./svg-qnnnaesayi";
 export default function Text() {
   return (
     <div className="relative size-full" data-name="TEXT">
-      <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 171.44 62.3">
+      <svg className="block size-full" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 171.44 62.3">
         <g clipPath="url(#clip0_4_184)" id="TEXT">
           <path d={svgPaths.p31c50900} fill="var(--fill-0, #F2E911)" id="Vector" />
           <path d={svgPaths.p21b63c0} fill="var(--fill-0, #F2E911)" id="Vector_2" />
