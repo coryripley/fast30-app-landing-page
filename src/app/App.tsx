@@ -257,6 +257,8 @@ export default function App() {
           .hero-section {
             overflow-x: clip !important;
             overflow-y: visible !important;
+            min-height: 100vh !important;
+            padding-bottom: 50vh !important;
           }
         }
       `}</style>
