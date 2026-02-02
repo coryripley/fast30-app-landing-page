@@ -756,7 +756,7 @@ export default function App() {
                 src={mediaDeviceHandHoldingPhone}
                 alt="FAST30 App"
                 style={{
-                  width: '175vw',
+                  width: '228vw',
                   maxWidth: 'none',
                   height: 'auto',
                   display: 'block',
