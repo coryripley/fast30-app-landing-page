@@ -650,13 +650,15 @@ export default function App() {
                   }
                   @media (max-width: 768px) {
                     .hero-device { 
-                      width: 100% !important;
+                      width: 100vw !important;
+                      max-width: 100vw !important;
                       height: auto !important;
                       min-height: 70vh !important;
                       position: relative !important;
                       display: flex !important;
                       justify-content: center !important;
                       align-items: flex-start !important;
+                      overflow: visible !important;
                     }
                   }
                 `}} />
@@ -722,19 +724,20 @@ export default function App() {
                     @media (max-width: 768px) {
                       .hero-phone-wrapper {
                         position: relative !important;
-                        width: 100% !important;
+                        width: 100vw !important;
+                        max-width: 100vw !important;
                         display: flex !important;
                         justify-content: center !important;
                         align-items: flex-start !important;
                         z-index: 10 !important;
+                        overflow: visible !important;
                       }
-                      .heroPhoneImg {
+                      #hero-phone-final {
                         width: calc(100vw - 48px) !important;
                         height: auto !important;
-                        max-width: none !important;
-                        max-height: none !important;
+                        max-width: unset !important;
+                        max-height: unset !important;
                         z-index: 10 !important;
-                        object-fit: contain !important;
                       }
                     }
                   `}</style>
