@@ -728,14 +728,14 @@ export default function App() {
                         display: flex !important;
                         justify-content: center !important;
                         align-items: flex-start !important;
-                        padding-top: 10px !important;
+                        padding-top: 0 !important;
                         z-index: 10 !important;
                       }
                       .heroPhoneImg {
-                        width: auto !important;
-                        height: calc(75vh) !important;
-                        max-width: 90vw !important;
-                        max-height: calc(75vh) !important;
+                        width: 95vw !important;
+                        height: auto !important;
+                        max-width: 95vw !important;
+                        max-height: 85vh !important;
                         z-index: 10 !important;
                       }
                     }
