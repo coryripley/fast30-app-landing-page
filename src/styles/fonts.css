@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-/* Monument Extended Alternative - Using Anton as a similar bold condensed font */
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* Monument Extended Alternative - Using Bebas Neue as a closer match */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* If you have Monument Extended font files, you can add them here using @font-face */
-/* For now, using Anton which has a similar bold, impactful look */
+/* If you have Monument Extended font files (.woff2, .woff, .ttf), add them to src/assets/fonts/ and uncomment:
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../assets/fonts/MonumentExtended-Regular.woff2') format('woff2'),
+       url('../assets/fonts/MonumentExtended-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../assets/fonts/MonumentExtended-Bold.woff2') format('woff2'),
+       url('../assets/fonts/MonumentExtended-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*/
