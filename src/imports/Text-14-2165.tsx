@@ -1,0 +1,39 @@
+import svgPaths from "./svg-x1qpp0gofn";
+
+export default function Text() {
+  return (
+    <div className="relative size-full" data-name="TEXT">
+      <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 187.35 62.3">
+        <g clipPath="url(#clip0_14_2169)" id="TEXT">
+          <path d={svgPaths.p9369080} fill="var(--fill-0, #F2E911)" id="Vector" />
+          <path d={svgPaths.p1120e780} fill="var(--fill-0, #F2E911)" id="Vector_2" />
+          <path d={svgPaths.p1e6b8300} fill="var(--fill-0, #231F20)" id="Vector_3" />
+          <path d={svgPaths.p371f800} fill="var(--fill-0, #231F20)" id="Vector_4" />
+          <path d={svgPaths.p258ca080} fill="var(--fill-0, #231F20)" id="Vector_5" />
+          <path d={svgPaths.p5b53ff0} fill="var(--fill-0, #231F20)" id="Vector_6" />
+          <path d={svgPaths.p13e3bef0} fill="var(--fill-0, #231F20)" id="Vector_7" />
+          <path d={svgPaths.p1a698b80} fill="var(--fill-0, #231F20)" id="Vector_8" />
+          <path d={svgPaths.p176fc180} fill="var(--fill-0, #231F20)" id="Vector_9" />
+          <path d={svgPaths.p3befdd00} fill="var(--fill-0, #231F20)" id="Vector_10" />
+          <path d={svgPaths.p24c29d00} fill="var(--fill-0, #231F20)" id="Vector_11" />
+          <path d={svgPaths.pe51ff80} fill="var(--fill-0, #231F20)" id="Vector_12" />
+          <path d={svgPaths.p1b79e000} fill="var(--fill-0, #231F20)" id="Vector_13" />
+          <path d={svgPaths.pf756b70} fill="var(--fill-0, #231F20)" id="Vector_14" />
+          <path d={svgPaths.p1db4f00} fill="var(--fill-0, #231F20)" id="Vector_15" />
+          <path d={svgPaths.p38f3cd00} fill="var(--fill-0, #231F20)" id="Vector_16" />
+          <path d={svgPaths.p3597f00} fill="var(--fill-0, #231F20)" id="Vector_17" />
+          <path d={svgPaths.p3eda0200} fill="var(--fill-0, #231F20)" id="Vector_18" />
+          <path d={svgPaths.p3a653100} fill="var(--fill-0, #231F20)" id="Vector_19" />
+          <path d={svgPaths.p334ada00} fill="var(--fill-0, #231F20)" id="Vector_20" />
+          <path d={svgPaths.p19a8c4f0} fill="var(--fill-0, #231F20)" id="Vector_21" />
+          <path d={svgPaths.p17bfc000} fill="var(--fill-0, #231F20)" id="Vector_22" />
+        </g>
+        <defs>
+          <clipPath id="clip0_14_2169">
+            <rect fill="white" height="62.3" width="187.35" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
