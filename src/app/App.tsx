@@ -648,12 +648,7 @@ export default function App() {
                   }
                   @media (max-width: 768px) {
                     .hero-device { 
-                      width: 100% !important;
-                      height: 85vh !important;
-                      position: relative !important;
-                      display: flex !important;
-                      justify-content: center !important;
-                      align-items: center !important;
+                      display: none !important;
                     }
                   }
                 `}} />
@@ -733,6 +728,33 @@ export default function App() {
                   `}</style>
                 </div>
               </div>
+            </div>
+
+            {/* Simple Mobile Phone - hidden on desktop */}
+            <div className="mobile-phone-simple">
+              <div
+                style={{
+                  backgroundImage: `url(${mediaDeviceHandHoldingPhone})`,
+                  backgroundSize: 'contain',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  width: '90vw',
+                  height: '70vh',
+                  margin: '0 auto',
+                }}
+              />
+              <style>{`
+                .mobile-phone-simple {
+                  display: none;
+                }
+                @media (max-width: 768px) {
+                  .mobile-phone-simple {
+                    display: block;
+                    width: 100%;
+                    padding: 20px 0;
+                  }
+                }
+              `}</style>
             </div>
 
           </div>
