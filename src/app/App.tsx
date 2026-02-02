@@ -651,13 +651,12 @@ export default function App() {
                   @media (max-width: 768px) {
                     .hero-device { 
                       width: 100% !important;
-                      height: 70vh !important;
-                      position: relative !important;
-                    }
-                    .hero-device img {
-                      width: calc(100vw - 48px) !important;
-                      max-width: none !important;
                       height: auto !important;
+                      min-height: 70vh !important;
+                      position: relative !important;
+                      display: flex !important;
+                      justify-content: center !important;
+                      align-items: flex-start !important;
                     }
                   }
                 `}} />
@@ -722,21 +721,17 @@ export default function App() {
                     }
                     @media (max-width: 768px) {
                       .hero-phone-wrapper {
-                        position: absolute !important;
-                        top: 0 !important;
-                        left: 0 !important;
+                        position: relative !important;
                         width: 100% !important;
-                        height: 100% !important;
                         display: flex !important;
                         justify-content: center !important;
                         align-items: flex-start !important;
-                        padding-top: 0 !important;
                         z-index: 10 !important;
                       }
                       .heroPhoneImg {
-                        width: auto !important;
-                        height: 75vh !important;
-                        max-width: 100vw !important;
+                        width: calc(100vw - 48px) !important;
+                        height: auto !important;
+                        max-width: none !important;
                         max-height: none !important;
                         z-index: 10 !important;
                         object-fit: contain !important;
