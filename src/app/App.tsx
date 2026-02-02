@@ -702,7 +702,7 @@ export default function App() {
                       width: auto;
                       height: auto;
                       max-width: 100%;
-                      max-height: 880px;
+                      max-height: 925px;
                       object-fit: contain;
                     }
                     @media (min-width: 769px) {
@@ -710,12 +710,12 @@ export default function App() {
                         margin-top: 20px;
                       }
                       .heroPhoneImg {
-                        max-height: 920px;
+                        max-height: 970px;
                       }
                     }
                     @media (min-width: 1200px) {
                       .heroPhoneImg {
-                        max-height: 980px;
+                        max-height: 1030px;
                       }
                     }
                     @media (max-width: 768px) {
