@@ -245,15 +245,15 @@
   image-rendering: -webkit-optimize-contrast;
 }
 
-/* Large desktop: minimal scaling */
+/* Large desktop */
 @media (min-width: 1200px) {
   .heroPhone::before {
-    transform: translateX(3%) translateY(-3%) scale(1.7);
+    transform: translateX(5%) translateY(-5%) scale(2.0);
   }
   
   .heroPhone {
-    max-width: 550px !important;
-    max-height: calc(550px * 19/9 - 200px) !important;
+    max-width: 600px !important;
+    max-height: calc(600px * 19/9 - 250px) !important;
     margin-top: 50px !important;
   }
 }
@@ -261,13 +261,13 @@
 /* Medium desktop */
 @media (min-width: 768px) and (max-width: 1199px) {
   .heroPhone::before {
-    transform: translateX(3%) translateY(-3%) scale(1.75);
+    transform: translateX(5%) translateY(-5%) scale(2.0);
   }
   
   .heroPhone {
-    max-width: 500px !important;
-    max-height: calc(500px * 19/9 - 180px) !important;
-    margin-top: 40px !important;
+    max-width: 600px !important;
+    max-height: calc(600px * 19/9 - 250px) !important;
+    margin-top: 50px !important;
   }
 }
 
@@ -278,7 +278,7 @@
   }
   
   .heroPhone::before {
-    transform: translateX(3%) translateY(-3%) scale(1.85);
+    transform: translateX(5%) translateY(-5%) scale(2.1);
   }
 }
 
