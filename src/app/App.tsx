@@ -689,7 +689,7 @@ export default function App() {
                 </div>
                 {/* Media / Device / Hand Holding Phone */}
                 {/* Device Screen / Welcome Back – Progress Dashboard */}
-                <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 1 }}>
+                <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 10, position: 'relative' }}>
                   <img 
                     id="hero-phone-final"
                     className="heroPhoneImg" 
@@ -697,10 +697,12 @@ export default function App() {
                     alt="FAST30 App Dashboard"
                     style={{
                       width: 'auto',
-                      maxWidth: '550px',
+                      maxWidth: '700px',
                       height: 'auto',
-                      maxHeight: '820px',
+                      maxHeight: '1000px',
                       objectFit: 'contain',
+                      position: 'relative',
+                      zIndex: 10,
                     }}
                   />
                   <style>{`
@@ -709,14 +711,14 @@ export default function App() {
                         margin-top: 20px;
                       }
                       .heroPhoneImg {
-                        max-width: 550px !important;
-                        max-height: 820px !important;
+                        max-width: 700px !important;
+                        max-height: 1000px !important;
                       }
                     }
                     @media (min-width: 1200px) {
                       .heroPhoneImg {
-                        max-width: 600px !important;
-                        max-height: 900px !important;
+                        max-width: 750px !important;
+                        max-height: 1100px !important;
                       }
                     }
                     @media (max-width: 768px) {
@@ -730,12 +732,14 @@ export default function App() {
                         justify-content: center !important;
                         align-items: flex-start !important;
                         padding-top: 20px !important;
+                        z-index: 10 !important;
                       }
                       .heroPhoneImg {
                         width: 85vw !important;
                         max-width: 400px !important;
                         height: auto !important;
                         max-height: calc(75vh) !important;
+                        z-index: 10 !important;
                       }
                     }
                   `}</style>
