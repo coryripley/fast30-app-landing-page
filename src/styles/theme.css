@@ -218,40 +218,18 @@
 /* Hero phone styles */
 .heroPhone {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center center;
   background-size: contain;
 
   transform: translateZ(0);
 }
 
-.heroPhone::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: inherit;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
-
-  transform: translateX(5%) translateY(-5%) scale(2.09);
-  transform-origin: center;
-
-  will-change: transform;
-}
-
 /* Desktop */
 @media (min-width: 768px) {
-  .heroPhone::before {
-    transform: translateX(5%) translateY(-5%) scale(2.09);
-  }
-  
   .heroPhone {
-    max-width: 600px !important;
-    max-height: calc(600px * 19/9 - 250px) !important;
     margin-top: 50px !important;
   }
 }
@@ -260,10 +238,6 @@
 @media (max-width: 767px) {
   .heroPhone {
     margin-top: -25px !important;
-  }
-  
-  .heroPhone::before {
-    transform: translateX(5%) translateY(-5%) scale(2.2);
   }
 }
 

@@ -690,46 +690,53 @@ export default function App() {
                 {/* Media / Device / Hand Holding Phone */}
                 {/* Device Screen / Welcome Back – Progress Dashboard */}
                 <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 1 }}>
-                  <div 
+                  <img 
                     id="hero-phone-final"
-                    className="heroPhone" 
-                    style={{
-                      width: 'calc(100vw - 48px)',
-                      maxWidth: '768px',
-                      aspectRatio: '9/19',
-                      height: 'calc((100vw - 48px) * 19/9)',
-                      maxHeight: 'calc(768px * 19/9)',
-                      backgroundImage: `url(${mediaDeviceHandHoldingPhone})`
-                    }}
-                  >
-                    <style>{`
-                      @media (min-width: 769px) {
-                        .hero-phone-wrapper {
-                          margin-top: 20px;
-                        }
+                    className="heroPhoneImg" 
+                    src={mediaDeviceHandHoldingPhone}
+                    alt="FAST30 App Dashboard"
+                  />
+                  <style>{`
+                    .heroPhoneImg {
+                      width: auto;
+                      height: auto;
+                      max-width: 100%;
+                      max-height: 800px;
+                      object-fit: contain;
+                    }
+                    @media (min-width: 769px) {
+                      .hero-phone-wrapper {
+                        margin-top: 20px;
                       }
-                      @media (max-width: 768px) {
-                        .hero-phone-wrapper {
-                          position: absolute !important;
-                          top: 0 !important;
-                          left: 0 !important;
-                          width: 100% !important;
-                          height: 100% !important;
-                          display: block !important;
-                        }
-                        .heroPhone {
-                          width: 85vw !important;
-                          height: calc(70vh - 25px) !important;
-                          max-width: 85vw !important;
-                          max-height: calc(70vh - 25px) !important;
-                          position: absolute !important;
-                          top: calc(35vh - 10px - 35vh + 12.5px) !important;
-                          left: 50% !important;
-                          transform: translateX(-50%) !important;
-                        }
+                      .heroPhoneImg {
+                        max-height: 850px;
                       }
-                    `}</style>
-                  </div>
+                    }
+                    @media (min-width: 1200px) {
+                      .heroPhoneImg {
+                        max-height: 900px;
+                      }
+                    }
+                    @media (max-width: 768px) {
+                      .hero-phone-wrapper {
+                        position: absolute !important;
+                        top: 0 !important;
+                        left: 0 !important;
+                        width: 100% !important;
+                        height: 100% !important;
+                        display: flex !important;
+                        justify-content: center !important;
+                        align-items: flex-start !important;
+                        padding-top: 10px !important;
+                      }
+                      .heroPhoneImg {
+                        width: auto !important;
+                        height: calc(75vh) !important;
+                        max-width: 90vw !important;
+                        max-height: calc(75vh) !important;
+                      }
+                    }
+                  `}</style>
                 </div>
               </div>
             </div>
