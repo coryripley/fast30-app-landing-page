@@ -690,22 +690,18 @@ export default function App() {
                     className="heroPhoneImg" 
                     src={mediaDeviceHandHoldingPhone}
                     alt="FAST30 App Dashboard"
-                    style={{ position: 'relative', zIndex: 10 }}
                   />
                   <style>{`
-                    .heroPhoneImg {
-                      width: auto;
-                      height: auto;
-                      max-width: 100%;
-                      max-height: 970px;
-                      object-fit: contain;
-                    }
                     @media (min-width: 769px) {
                       .hero-phone-wrapper {
                         margin-top: 20px;
                       }
                       .heroPhoneImg {
-                        max-height: 1020px;
+                        width: auto;
+                        height: auto;
+                        max-width: 100%;
+                        max-height: 970px;
+                        object-fit: contain;
                       }
                     }
                     @media (min-width: 1200px) {
