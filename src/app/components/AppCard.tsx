@@ -12,9 +12,9 @@ export function AppCard({ logo, description, showAppleAvailable = false }: AppCa
   return (
     <div className="app-card bg-black rounded-2xl p-6" style={{ height: '240px', display: 'flex', flexDirection: 'column', width: '284px' }}>
       {/* App Card / Header */}
-      <div className="app-card-header" style={{ marginBottom: '20px', marginLeft: '15px', height: '63px', display: 'flex', alignItems: 'center' }}>
+      <div className="app-card-header" style={{ marginBottom: '20px', marginLeft: '15px', height: '63px', display: 'flex', alignItems: 'flex-start' }}>
         {/* Header / Brand – FAST30 Logo Panel */}
-        <div style={{ height: '100%', maxWidth: '200px' }}>
+        <div className="app-card-logo-wrapper" style={{ height: '63px', width: 'auto' }}>
           {logo}
         </div>
       </div>
@@ -82,6 +82,18 @@ export function AppCard({ logo, description, showAppleAvailable = false }: AppCa
         </div>
       </div>
       <style dangerouslySetInnerHTML={{__html: `
+        .app-card-logo-wrapper {
+          height: 63px;
+          width: auto;
+        }
+        .app-card-logo-wrapper > div {
+          height: 63px;
+          width: auto;
+        }
+        .app-card-logo-wrapper svg {
+          height: 63px !important;
+          width: auto !important;
+        }
         @media (max-width: 768px) {
           .app-card {
             width: 100% !important;

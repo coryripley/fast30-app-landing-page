@@ -1860,9 +1860,9 @@ export default function App() {
                     src={headerBrandLogoPanel} 
                     alt="3MIN WALL SIT" 
                     style={{ 
-                      height: '100%',
+                      height: '63px',
                       width: 'auto',
-                      objectFit: 'contain'
+                      display: 'block'
                     }} 
                   />
                 }
