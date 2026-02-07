@@ -618,8 +618,9 @@ export default function App() {
                 @media (min-width: 769px) {
                   .hero-device-wrapper {
                     width: 100%; 
-                    max-width: 1440px;
+                    max-width: 672px;
                     height: 960px;
+                    overflow: visible;
                   }
                 }
                 @media (max-width: 768px) {
@@ -696,25 +697,19 @@ export default function App() {
                   />
                   <style>{`
                     .heroPhone {
-                      width: 750px;
-                      height: 1200px;
+                      width: 1200px;
+                      height: 960px;
                     }
                     @media (min-width: 769px) {
                       .hero-phone-wrapper {
-                        margin-top: 20px;
+                        margin-top: 0;
                         position: relative;
+                        display: flex;
+                        justify-content: center;
+                        overflow: visible;
                       }
-                    }
-                    @media (min-width: 1200px) {
                       .heroPhone {
-                        width: 850px;
-                        height: 1350px;
-                      }
-                    }
-                    @media (min-width: 1600px) {
-                      .heroPhone {
-                        width: 950px;
-                        height: 1500px;
+                        margin-left: -264px;
                       }
                     }
                     @media (max-width: 768px) {
