@@ -697,8 +697,8 @@ export default function App() {
                   />
                   <style>{`
                     .heroPhone {
-                      width: 1200px;
-                      height: 960px;
+                      width: 1320px;
+                      height: 1056px;
                     }
                     @media (min-width: 769px) {
                       .hero-phone-wrapper {
