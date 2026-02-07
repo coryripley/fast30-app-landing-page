@@ -1436,178 +1436,78 @@ export default function App() {
 
             {/* UX Walkthrough / Content Block */}
             <div style={{ position: 'relative' }}>
-              {/* Device Glow / Background Gradient */}
-              <div 
-                className="absolute" 
-                style={{ 
-                  top: '50%',
-                  left: '50%',
-                  width: '800px',
-                  height: '600px',
-                  transform: 'translate(-50%, -50%)',
-                  background: 'radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 70%)',
-                  pointerEvents: 'none',
-                  zIndex: 0
-                }}
-              />
-              
               {/* UX Walkthrough / Phone Row (Horizontal – 4 Columns) */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" style={{ position: 'relative', zIndex: 1 }}>
+              <div className="ux-phone-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px', position: 'relative', zIndex: 1 }}>
                 {/* UX Column / 01 */}
-                <div className="flex flex-col items-center">
-                  {/* Media / Phone – Screen 01 (Independent Image) */}
-                  <div 
-                    className="phoneWindow ux-phone-01 rounded-lg" 
-                    style={{ 
-                      width: '100%', 
-                      aspectRatio: '9/18.75',
-                      backgroundImage: `url(${mediaPhoneScreen01})`,
-                      backgroundSize: 'contain',
-                      backgroundPosition: 'center 3px',
-                      backgroundRepeat: 'no-repeat',
-                      marginBottom: '0px'
-                    }}
+                <div className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <img 
+                    src={mediaPhoneScreen01} 
+                    alt="Dashboard Screen"
+                    style={{ width: '100%', height: 'auto', display: 'block', marginBottom: '16px' }}
                   />
-                  <style dangerouslySetInnerHTML={{__html: `
-                    @media (max-width: 768px) {
-                      .ux-phone-01 { 
-                        margin-bottom: 10px !important;
-                      }
-                    }
-                  `}} />
-                {/* Supporting Copy / 01 */}
-                <p className="ux-supporting-copy" style={{ 
-                  fontFamily: 'Inter, sans-serif', 
-                  fontSize: '14px', 
-                  lineHeight: '1.6', 
-                  color: '#959595',
-                  textAlign: 'left',
-                  paddingLeft: '20px',
-                  paddingRight: '20px',
-                  marginTop: '0px'
-                }}>
-                  Centralized, at-a-glance overview of data that tracks progress and provides program insights.
-                </p>
-              </div>
+                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', marginTop: '0px' }}>
+                    Centralized, at-a-glance overview of data that tracks progress and provides program insights.
+                  </p>
+                </div>
 
-              {/* UX Column / 02 */}
-              <div className="flex flex-col items-center">
-                {/* Media / Phone – Screen 02 (Independent Image) */}
-                <div 
-                  className="phoneWindow ux-phone-02 rounded-lg" 
-                  style={{ 
-                    width: '100%', 
-                    aspectRatio: '9/18.75',
-                    backgroundImage: `url(${mediaPhoneScreen02})`,
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'center 3px',
-                    backgroundRepeat: 'no-repeat',
-                    marginBottom: '0px'
-                  }}
-                />
-                <style dangerouslySetInnerHTML={{__html: `
-                  @media (max-width: 768px) {
-                    .ux-phone-02 { 
-                      margin-bottom: 10px !important;
-                    }
-                  }
-                `}} />
-                {/* Supporting Copy / 02 */}
-                <p className="ux-supporting-copy" style={{ 
-                  fontFamily: 'Inter, sans-serif', 
-                  fontSize: '14px', 
-                  lineHeight: '1.6', 
-                  color: '#959595',
-                  textAlign: 'left',
-                  paddingLeft: '20px',
-                  paddingRight: '20px',
-                  marginTop: '0px'
-                }}>
-                  Scientifically designed programs that pair routines with built-in warm-ups and rest timers.
-                </p>
-              </div>
+                {/* UX Column / 02 */}
+                <div className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <img 
+                    src={mediaPhoneScreen02} 
+                    alt="Workout Screen"
+                    style={{ width: '100%', height: 'auto', display: 'block', marginBottom: '16px' }}
+                  />
+                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', marginTop: '0px' }}>
+                    Scientifically designed programs that pair routines with built-in warm-ups and rest timers.
+                  </p>
+                </div>
 
-              {/* UX Column / 03 */}
-              <div className="flex flex-col items-center">
-                {/* Media / Phone – Screen 03 (Independent Image) */}
-                <div 
-                  className="phoneWindow ux-phone-03 rounded-lg" 
-                  style={{ 
-                    width: '100%', 
-                    aspectRatio: '9/18.75',
-                    backgroundImage: `url(${mediaPhoneScreen03})`,
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'center 3px',
-                    backgroundRepeat: 'no-repeat',
-                    marginBottom: '0px'
-                  }}
-                />
-                <style dangerouslySetInnerHTML={{__html: `
-                  @media (max-width: 768px) {
-                    .ux-phone-03 { 
-                      margin-bottom: 10px !important;
-                    }
-                  }
-                `}} />
-                {/* Supporting Copy / 03 */}
-                <p className="ux-supporting-copy" style={{ 
-                  fontFamily: 'Inter, sans-serif', 
-                  fontSize: '14px', 
-                  lineHeight: '1.6', 
-                  color: '#959595',
-                  textAlign: 'left',
-                  paddingLeft: '20px',
-                  paddingRight: '20px',
-                  marginTop: '0px'
-                }}>
-                  Personalized progress tracking, achievement badges, and goal setting to keep motivation high.
-                </p>
-              </div>
+                {/* UX Column / 03 */}
+                <div className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <img 
+                    src={mediaPhoneScreen03} 
+                    alt="Goals Screen"
+                    style={{ width: '100%', height: 'auto', display: 'block', marginBottom: '16px' }}
+                  />
+                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', marginTop: '0px' }}>
+                    Personalized progress tracking, achievement badges, and goal setting to keep motivation high.
+                  </p>
+                </div>
 
-              {/* UX Column / 04 */}
-              <div className="flex flex-col items-center">
-                {/* Media / Phone – Screen 04 (Independent Image) */}
-                <div 
-                  className="phoneWindow ux-phone-04 rounded-lg" 
-                  style={{ 
-                    width: '100%', 
-                    aspectRatio: '9/18.75',
-                    backgroundImage: `url(${mediaPhoneScreen04})`,
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'center 3px',
-                    backgroundRepeat: 'no-repeat',
-                    marginBottom: '0px'
-                  }}
-                />
-                <style dangerouslySetInnerHTML={{__html: `
-                  @media (max-width: 768px) {
-                    .ux-phone-04 { 
-                      margin-bottom: 10px !important;
-                    }
-                  }
-                `}} />
-                {/* Supporting Copy / 04 */}
-                <p className="ux-supporting-copy" style={{ 
-                  fontFamily: 'Inter, sans-serif', 
-                  fontSize: '14px', 
-                  lineHeight: '1.6', 
-                  color: '#959595',
-                  textAlign: 'left',
-                  paddingLeft: '20px',
-                  paddingRight: '20px',
-                  marginTop: '0px'
-                }}>
-                  Self-managed health and wellness planning built for long-term consistency.
-                </p>
+                {/* UX Column / 04 */}
+                <div className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <img 
+                    src={mediaPhoneScreen04} 
+                    alt="Completion Screen"
+                    style={{ width: '100%', height: 'auto', display: 'block', marginBottom: '16px' }}
+                  />
+                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', marginTop: '0px' }}>
+                    Self-managed health and wellness planning built for long-term consistency.
+                  </p>
+                </div>
               </div>
-            </div>
-            <style dangerouslySetInnerHTML={{__html: `
-              @media (max-width: 768px) {
-                .ux-supporting-copy { 
-                  margin-bottom: 30px !important;
+              <style dangerouslySetInnerHTML={{__html: `
+                @media (max-width: 768px) {
+                  .ux-phone-grid {
+                    grid-template-columns: repeat(2, 1fr) !important;
+                    gap: 16px !important;
+                  }
+                  .ux-phone-col p {
+                    margin-bottom: 20px !important;
+                    font-size: 13px !important;
+                  }
                 }
-              }
-            `}} />
+                @media (max-width: 480px) {
+                  .ux-phone-grid {
+                    grid-template-columns: 1fr !important;
+                    max-width: 300px !important;
+                    margin: 0 auto !important;
+                  }
+                  .ux-phone-col p {
+                    margin-bottom: 30px !important;
+                  }
+                }
+              `}} />
             </div>
           </div>
         </div>
