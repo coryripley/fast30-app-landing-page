@@ -709,7 +709,8 @@ export default function App() {
                         overflow: visible;
                       }
                       .heroPhone {
-                        margin-left: -264px;
+                        margin-left: -324px;
+                        margin-top: -20px;
                       }
                     }
                     @media (max-width: 768px) {
