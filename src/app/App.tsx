@@ -614,7 +614,27 @@ export default function App() {
                 .hero-device-wrapper { 
                   position: relative; 
                   margin: 0 auto; 
-                }
+                }.hero-device {
+  position: relative;
+}
+
+.hero-device-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  height: 960px;
+  transform: translate(-50%, -50%) translateX(-250px);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.08) 40%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
                 @media (min-width: 769px) {
                   .hero-device-wrapper {
                     width: 100%; 
@@ -642,7 +662,7 @@ export default function App() {
                   }
                   @media (min-width: 769px) {
                     .hero-device {
-                      transform: translateY(-100px);
+                      transform: translateY(-140px);
                       width: 1200px;
                       height: 960px;
                     }
@@ -654,18 +674,8 @@ export default function App() {
                   }
                 `}} />
                 {/* Device Glow / Background Gradient */}
-                <div 
-                  className="absolute hero-device-glow" 
-                  style={{ 
-                    top: 'calc(50% - 580px)',
-                    left: 'calc(50% - 480px)',
-                    width: '960px',
-                    height: '960px',
-                    background: 'radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 40%, rgba(255, 255, 255, 0) 70%)',
-                    pointerEvents: 'none',
-                    zIndex: 0
-                  }}
-                >
+                <div className="hero-device-glow" />
+
                   <style>{`
                     @media (max-width: 768px) {
                       .hero-device-glow {
@@ -680,7 +690,6 @@ export default function App() {
                       }
                     }
                   `}</style>
-                </div>
                 {/* Media / Device / Hand Holding Phone */}
                 {/* Device Screen / Welcome Back – Progress Dashboard */}
                 <div className="flex justify-center items-center hero-phone-wrapper" style={{ zIndex: 10 }}>
