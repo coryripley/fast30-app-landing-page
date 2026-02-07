@@ -1445,7 +1445,7 @@ export default function App() {
                   { src: mediaPhoneScreen04, alt: 'Completion Screen', text: 'Self-managed health and wellness planning built for long-term consistency.' },
                 ].map((phone, i) => (
                   <div key={i} className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <div style={{ width: '100%', aspectRatio: '9/19.5', overflow: 'hidden', position: 'relative', marginBottom: '16px' }}>
+                    <div style={{ width: '100%', aspectRatio: '9/19.5', overflow: 'hidden', position: 'relative', marginBottom: '16px', margin: '0 auto 16px auto' }}>
                       <img 
                         src={phone.src} 
                         alt={phone.alt}
@@ -1461,7 +1461,7 @@ export default function App() {
                         }}
                       />
                     </div>
-                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', marginTop: '0px' }}>
+                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '0px', paddingRight: '0px', marginTop: '0px', width: '100%' }}>
                       {phone.text}
                     </p>
                   </div>
