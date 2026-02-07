@@ -1807,7 +1807,7 @@ export default function App() {
             </div>
 
             {/* Program Library / Grid (Desktop: 4 columns × 4 rows) */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="app-card-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" style={{ justifyItems: 'center' }}>
               {/* Program Row / 01 */}
               {/* App Card / 01 – FAST30 100 Push-Ups */}
               <AppCard 

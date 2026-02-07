@@ -10,7 +10,7 @@ interface AppCardProps {
 
 export function AppCard({ logo, description, showAppleAvailable = false }: AppCardProps) {
   return (
-    <div className="app-card bg-black rounded-2xl p-6" style={{ height: '240px', display: 'flex', flexDirection: 'column', width: '284px' }}>
+    <div className="app-card bg-black rounded-2xl p-6" style={{ minHeight: '240px', display: 'flex', flexDirection: 'column', maxWidth: '284px', width: '100%' }}>
       {/* App Card / Header */}
       <div className="app-card-header" style={{ marginBottom: '20px', marginLeft: '15px', height: '63px', display: 'flex', alignItems: 'flex-start' }}>
         {/* Header / Brand – FAST30 Logo Panel */}
