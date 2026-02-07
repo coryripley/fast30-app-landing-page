@@ -1437,54 +1437,35 @@ export default function App() {
             {/* UX Walkthrough / Content Block */}
             <div style={{ position: 'relative' }}>
               {/* UX Walkthrough / Phone Row (Horizontal – 4 Columns) */}
-              <div className="ux-phone-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px', position: 'relative', zIndex: 1 }}>
-                {/* UX Column / 01 */}
-                <div className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <img 
-                    src={mediaPhoneScreen01} 
-                    alt="Dashboard Screen"
-                    style={{ width: '100%', height: 'auto', display: 'block', marginBottom: '16px' }}
-                  />
-                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', marginTop: '0px' }}>
-                    Centralized, at-a-glance overview of data that tracks progress and provides program insights.
-                  </p>
-                </div>
-
-                {/* UX Column / 02 */}
-                <div className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <img 
-                    src={mediaPhoneScreen02} 
-                    alt="Workout Screen"
-                    style={{ width: '100%', height: 'auto', display: 'block', marginBottom: '16px' }}
-                  />
-                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', marginTop: '0px' }}>
-                    Scientifically designed programs that pair routines with built-in warm-ups and rest timers.
-                  </p>
-                </div>
-
-                {/* UX Column / 03 */}
-                <div className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <img 
-                    src={mediaPhoneScreen03} 
-                    alt="Goals Screen"
-                    style={{ width: '100%', height: 'auto', display: 'block', marginBottom: '16px' }}
-                  />
-                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', marginTop: '0px' }}>
-                    Personalized progress tracking, achievement badges, and goal setting to keep motivation high.
-                  </p>
-                </div>
-
-                {/* UX Column / 04 */}
-                <div className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <img 
-                    src={mediaPhoneScreen04} 
-                    alt="Completion Screen"
-                    style={{ width: '100%', height: 'auto', display: 'block', marginBottom: '16px' }}
-                  />
-                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', marginTop: '0px' }}>
-                    Self-managed health and wellness planning built for long-term consistency.
-                  </p>
-                </div>
+              <div className="ux-phone-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', position: 'relative', zIndex: 1 }}>
+                {[
+                  { src: mediaPhoneScreen01, alt: 'Dashboard Screen', text: 'Centralized, at-a-glance overview of data that tracks progress and provides program insights.' },
+                  { src: mediaPhoneScreen02, alt: 'Workout Screen', text: 'Scientifically designed programs that pair routines with built-in warm-ups and rest timers.' },
+                  { src: mediaPhoneScreen03, alt: 'Goals Screen', text: 'Personalized progress tracking, achievement badges, and goal setting to keep motivation high.' },
+                  { src: mediaPhoneScreen04, alt: 'Completion Screen', text: 'Self-managed health and wellness planning built for long-term consistency.' },
+                ].map((phone, i) => (
+                  <div key={i} className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <div style={{ width: '100%', aspectRatio: '9/19.5', overflow: 'hidden', position: 'relative', marginBottom: '16px' }}>
+                      <img 
+                        src={phone.src} 
+                        alt={phone.alt}
+                        style={{ 
+                          position: 'absolute',
+                          top: '50%',
+                          left: '50%',
+                          transform: 'translate(-50%, -50%) scale(3.2)',
+                          width: '100%',
+                          height: 'auto',
+                          display: 'block',
+                          transformOrigin: 'center center'
+                        }}
+                      />
+                    </div>
+                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#959595', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', marginTop: '0px' }}>
+                      {phone.text}
+                    </p>
+                  </div>
+                ))}
               </div>
               <style dangerouslySetInnerHTML={{__html: `
                 @media (max-width: 768px) {
