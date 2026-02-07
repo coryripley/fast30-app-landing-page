@@ -1451,9 +1451,9 @@ export default function App() {
                         alt={phone.alt}
                         style={{ 
                           position: 'absolute',
-                          top: '50%',
+                          top: 'calc(50% - 30px)',
                           left: '50%',
-                          transform: 'translate(-50%, -49%) scale(3.84)',
+                          transform: 'translate(-50%, -50%) scale(3.84)',
                           width: '100%',
                           height: 'auto',
                           display: 'block',
