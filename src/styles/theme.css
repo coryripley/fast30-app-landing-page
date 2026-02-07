@@ -204,12 +204,12 @@
   position: absolute;
   inset: 0;
 
-  background: inherit;           /* re-use background-image from inline style */
+  background: inherit;
   background-repeat: no-repeat;
-  background-position: 50% 45%;
+  background-position: 50% 50%;
   background-size: contain;
 
-  transform: translateY(6%) scale(3.7); /* increased scale to 3.7 */
+  transform: scale(1);
   transform-origin: center;
 
   will-change: transform;

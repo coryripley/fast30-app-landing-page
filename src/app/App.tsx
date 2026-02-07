@@ -718,7 +718,7 @@ export default function App() {
                         overflow: visible;
                       }
                       .heroPhone {
-                        margin-left: -434px;
+                        margin-left: -480px;
                         margin-top: -70px;
                       }
                     }
@@ -1358,7 +1358,7 @@ export default function App() {
       {/* End Section 4 — Reviews / Testimonials */}
 
       {/* Section 5 — UX Walkthrough (Simplicity Through Intention) */}
-      <section style={{ paddingBottom: '60px' }}>
+      <section id="ux-walkthrough" style={{ paddingBottom: '60px' }}>
         {/* Section Card / UX Walkthrough */}
         <div className="max-w-7xl mx-auto">
           {/* UX Walkthrough / Container */}
