@@ -1453,7 +1453,7 @@ export default function App() {
                           position: 'absolute',
                           top: '50%',
                           left: '50%',
-                          transform: 'translate(-50%, -46%) scale(3.84)',
+                          transform: 'translate(-50%, -49%) scale(3.84)',
                           width: '100%',
                           height: 'auto',
                           display: 'block',
