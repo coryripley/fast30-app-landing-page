@@ -1441,7 +1441,7 @@ export default function App() {
                 {[
                   { src: mediaPhoneScreen01, alt: 'Dashboard Screen', text: 'A centralized, at-a-glance overview of your data that tracks progress and provides program insights.' },
                   { src: mediaPhoneScreen02, alt: 'Workout Screen', text: 'Scientifically proven programs that pair varied routines and skill levels, with built-in warm-ups and rest timers.' },
-                  { src: mediaPhoneScreen03, alt: 'Goals Screen', text: 'Self-managed health and wellness goals and planning, built for long-term consistency, plus daily positivity messages.' },
+                  { src: mediaPhoneScreen03, alt: 'Goals Screen', text: 'Self-managed health and wellness goals, built for long-term consistency, plus daily positivity messages.' },
                   { src: mediaPhoneScreen04, alt: 'Completion Screen', text: 'Personalized progress tracking, achievement badges, and goal-setting notifications to keep motivation high.' },
                 ].map((phone, i) => (
                   <div key={i} className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
