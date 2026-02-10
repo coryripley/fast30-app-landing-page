@@ -207,7 +207,13 @@ export function LegalPanel({ isOpen, onClose, type }: LegalPanelProps) {
                 color: '#CCCCCC',
                 lineHeight: '1.6'
               }}>
-                If you have any questions about these Terms of Service, please contact us at hello@fast30apps.com.
+                If you have any questions about these Terms of Service, please contact us at{" "}
+                <a
+                  href="mailto:hello@fast30apps.com"
+                  style={{ color: "#F4EF1A", textDecoration: "none" }}
+                >
+                  hello@fast30apps.com
+                </a>.
               </p>
             </section>
           </>
@@ -315,7 +321,13 @@ export function LegalPanel({ isOpen, onClose, type }: LegalPanelProps) {
                 color: '#CCCCCC',
                 lineHeight: '1.6'
               }}>
-                You have the right to access, update, or delete your personal information at any time. You can do this through your account settings or by contacting us directly at hello@fast30apps.com.
+                You have the right to access, update, or delete your personal information at any time. You can do this through your account settings or by contacting us directly at{" "}
+                <a
+                  href="mailto:hello@fast30apps.com"
+                  style={{ color: "#F4EF1A", textDecoration: "none" }}
+                >
+                  hello@fast30apps.com
+                </a>.
               </p>
             </section>
 
@@ -359,7 +371,13 @@ export function LegalPanel({ isOpen, onClose, type }: LegalPanelProps) {
                 color: '#CCCCCC',
                 lineHeight: '1.6'
               }}>
-                If you have any questions about this Privacy Policy, please contact us at hello@fast30apps.com.
+                If you have any questions about our Privacy Policy, please contact us at{" "}
+                <a
+                  href="mailto:hello@fast30apps.com"
+                  style={{ color: "#F4EF1A", textDecoration: "none" }}
+                >
+                  hello@fast30apps.com
+                </a>.
               </p>
             </section>
           </>
@@ -518,7 +536,13 @@ export function LegalPanel({ isOpen, onClose, type }: LegalPanelProps) {
                 color: '#CCCCCC',
                 lineHeight: '1.6'
               }}>
-                If you have any questions about this Legal Disclaimer, please contact us at hello@fast30apps.com.
+                If you have any questions about this Legal Disclaimer, please contact us at{" "}
+                <a
+                  href="mailto:hello@fast30apps.com"
+                  style={{ color: "#F4EF1A", textDecoration: "none" }}
+                >
+                  hello@fast30apps.com
+                </a>.
               </p>
             </section>
           </>
@@ -720,7 +744,13 @@ export function LegalPanel({ isOpen, onClose, type }: LegalPanelProps) {
                 color: '#CCCCCC',
                 lineHeight: '1.6'
               }}>
-                If you have any questions about our use of cookies, please contact us at hello@fast30apps.com.
+                If you have any questions about our use of cookies, please contact us at{" "}
+                <a
+                  href="mailto:hello@fast30apps.com"
+                  style={{ color: "#F4EF1A", textDecoration: "none" }}
+                >
+                  hello@fast30apps.com
+                </a>.
               </p>
             </section>
           </>

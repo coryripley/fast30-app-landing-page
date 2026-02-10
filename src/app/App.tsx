@@ -2291,7 +2291,15 @@ export default function App() {
                 <span className="footer-divider">|</span>
                 
                 {/* Footer / Contact */}
-                <span className="footer-contact">Contact us at <span style={{ color: '#F4EF1A' }}>hello@fast30apps.com</span></span>
+                <span className="footer-contact">
+                  Contact us at{" "}
+                  <a
+                    href="mailto:hello@fast30apps.com?subject=FAST30%20Inquiry"
+                    style={{ color: "#F4EF1A", textDecoration: "none" }}
+                  >
+                    hello@fast30apps.com
+                  </a>
+                </span>
               </span>
             </div>
 
