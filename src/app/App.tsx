@@ -1812,20 +1812,20 @@ export default function App() {
               {/* App Card / 01 – FAST30 100 Push-Ups */}
               <AppCard 
                 logo={<PushUpsLogo />}
-                description="Increase push-up capacity through progressively higher daily repetition targets."
+                description="Increase your overall push-up capacity through progressively higher daily repetition targets."
                 showAppleAvailable={true}
               />
 
               {/* App Card / 02 – FAST30 200 Sit-Ups */}
               <AppCard 
                 logo={<SitUpsLogo />}
-                description="Strengthen core endurance through steadily rising sit-up repetition volume."
+                description="Strengthen your overall core endurance through steadily rising sit-up repetition volume."
               />
 
               {/* App Card / 03 – FAST30 50 Pull-Ups */}
               <AppCard 
                 logo={<PullUpsLogo />}
-                description="Develop pull-up strength through controlled progressive repetition and grip."
+                description="Develop a pull-up routine through a progressive repetition program and grip strength."
               />
 
               {/* App Card / 04 – FAST30 Meditation */}
@@ -1844,13 +1844,13 @@ export default function App() {
               {/* App Card / 06 – FAST30 100 Burpees */}
               <AppCard 
                 logo={<BurpeesLogo />}
-                description="Boost full-body conditioning through rising burpee repetition and endurance."
+                description="Boost your full-body conditioning through increased weekly burpee repetition and endurance."
               />
 
               {/* App Card / 07 – FAST30 5min Planks */}
               <AppCard 
                 logo={<PlanksLogo />}
-                description="Stabilize core strength through progressive plank holds and posture control."
+                description="Stabilize core strength and stability through progressive plank holds and posture control."
               />
 
               {/* App Card / 08 – FAST30 3min Wall Sit */}
@@ -1866,32 +1866,32 @@ export default function App() {
                     }} 
                   />
                 }
-                description="Train lower-body endurance through progressively longer wall-sit holds."
+                description="Train lower-body endurance and increase mental strength through progressively longer wall-sits."
               />
 
               {/* Program Row / 03 */}
               {/* App Card / 09 – FAST30 Toe Touches */}
               <AppCard 
                 logo={<ToeTouchesLogo />}
-                description="Expand core flexibility through controlled toe-touch movement and repetition."
+                description="Expand core flexibility through controlled toe-touch movement, increased sets and repetition."
               />
 
               {/* App Card / 10 – FAST30 Jumping Rope */}
               <AppCard 
                 logo={<JumpingRopeLogo />}
-                description="Advance cardio coordination through rhythmic jump-rope intervals and endurance."
+                description="Advance your cardio coordination through rhythmic jump-rope sets, intervals, and endurance."
               />
 
               {/* App Card / 11 – FAST30 Flexibility */}
               <AppCard 
                 logo={<FlexibilityLogo />}
-                description="Promote mobility and flexibility through guided stretching and controlled movement."
+                description="Promote mobility and flexibility through weekly guided stretching and controlled movements."
               />
 
               {/* App Card / 12 – FAST30 20,000 Steps */}
               <AppCard 
                 logo={<StepsLogo />}
-                description="Support daily movement through structured walking targets and consistency."
+                description="Support your weekly movement through a program of structured walking targets and consistency."
               />
 
               {/* Program Row / 04 */}
@@ -1904,19 +1904,19 @@ export default function App() {
               {/* App Card / 14 – FAST30 The Body 500 */}
               <AppCard 
                 logo={<Body500Logo />}
-                description="An advanced full-body endurance through high-volume training and muscular control."
+                description="Full-body endurance through high-volume training of 10 exercises, at 50 reps each."
               />
 
               {/* App Card / 15 – FAST30 The Daily 50 */}
               <AppCard 
                 logo={<Daily50Logo />}
-                description="A balanced daily fitness circuit through daily multi-exercise strength and stability."
+                description="50 bodyweight squats, 50 lunges, 50 push-ups, a 50-second wall sit, and a 50-second plank."
               />
 
               {/* App Card / 16 – FAST30 7min Workout */}
               <AppCard 
                 logo={<SevenMinWorkoutLogo />}
-                description="A high-intensity, efficient full-body training circuit for fast high-intensity exercise."
+                description="High-intensity interval training of 12 bodyweight exercises: 30 sec each with 10 sec rest in between."
               />
             </div>
           </div>
