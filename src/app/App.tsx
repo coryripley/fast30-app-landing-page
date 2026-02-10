@@ -1439,10 +1439,10 @@ export default function App() {
               {/* UX Walkthrough / Phone Row (Horizontal – 4 Columns) */}
               <div className="ux-phone-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', position: 'relative', zIndex: 1 }}>
                 {[
-                  { src: mediaPhoneScreen01, alt: 'Dashboard Screen', text: 'Centralized, at-a-glance overview of data that tracks progress and provides program insights.' },
-                  { src: mediaPhoneScreen02, alt: 'Workout Screen', text: 'Scientifically designed programs that pair routines with built-in warm-ups and rest timers.' },
-                  { src: mediaPhoneScreen03, alt: 'Goals Screen', text: 'Personalized progress tracking, achievement badges, and goal setting to keep motivation high.' },
-                  { src: mediaPhoneScreen04, alt: 'Completion Screen', text: 'Self-managed health and wellness planning built for long-term consistency.' },
+                  { src: mediaPhoneScreen01, alt: 'Dashboard Screen', text: 'A centralized, at-a-glance overview of your data that tracks progress and provides program insights.' },
+                  { src: mediaPhoneScreen02, alt: 'Workout Screen', text: 'Scientifically proven programs that pair varied routines and skill levels, with built-in warm-ups and rest timers.' },
+                  { src: mediaPhoneScreen03, alt: 'Goals Screen', text: 'Self-managed health and wellness goals and planning, built for long-term consistency, plus daily positivity messages.' },
+                  { src: mediaPhoneScreen04, alt: 'Completion Screen', text: 'Personalized progress tracking, achievement badges, and goal-setting notifications to keep motivation high.' },
                 ].map((phone, i) => (
                   <div key={i} className="ux-phone-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <div style={{ width: '100%', aspectRatio: '9/19.5', overflow: 'hidden', position: 'relative', marginBottom: '16px', margin: '0 auto 16px auto' }}>
