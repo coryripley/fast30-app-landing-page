@@ -20,7 +20,7 @@ import { ImageWithFallback } from './components/figma/ImageWithFallback';
 import { AppCard } from './components/AppCard';
 import { PlaceholderLogo } from './components/PlaceholderLogo';
 import { LegalPanel } from './components/LegalPanel';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import shannonProfileImg from '../assets/8d6bc8d3467dab4d7b21eb04d9ca035cb37d0467.png';
 import craigProfileImg from '../assets/beec4ba6ac4eebd728b995c425b72de9b7d569ed.png';
 import mediaDeviceHandHoldingPhone from '../assets/1d2efbdbd9ecd021efcdceb1a3fa35218864604a.png';
@@ -54,12 +54,21 @@ export default function App() {
     type: null
   });
 
+  useEffect(() => {
+    const path = window.location.pathname.replace('/', '');
+    if (['terms', 'privacy', 'legal', 'cookies'].includes(path)) {
+      setLegalPanel({ isOpen: true, type: path as 'terms' | 'privacy' | 'legal' | 'cookies' });
+    }
+  }, []);
+
   const openLegalPanel = (type: 'terms' | 'privacy' | 'legal' | 'cookies') => {
     setLegalPanel({ isOpen: true, type });
+    window.history.pushState({}, '', `/${type}`);
   };
 
   const closeLegalPanel = () => {
     setLegalPanel({ isOpen: false, type: null });
+    window.history.pushState({}, '', '/');
   };
 
   return (
