@@ -160,50 +160,81 @@ export function LegalPanel({ isOpen, onClose, type }: LegalPanelProps) {
             <section style={sectionStyle}>
               <h2 style={sectionTitleStyle}>Overview</h2>
               <p style={bodyStyle}>
-                This Privacy Policy explains how FAST30™ handles information related to the website.
+                This Privacy Policy explains how FAST30™ handles information for both the FAST30 mobile applications and the FAST30 website.
               </p>
             </section>
 
             <section style={sectionStyle}>
               <h2 style={sectionTitleStyle}>Information We Collect</h2>
-              <ul style={listStyle}>
-                <li style={{ marginBottom: '8px' }}><strong>Information you provide voluntarily:</strong> If you contact us (e.g., email), we receive the information you send (such as your name, email address, and message content).</li>
-                <li><strong>Basic website data:</strong> Like most websites, our hosting/provider tools may automatically log limited technical data (e.g., device type, browser, approximate location, and pages visited). This is typically used for security and performance.</li>
+              <p style={{ ...bodyStyle, fontWeight: 600, color: '#FFFFFF', marginBottom: '6px' }}>Information you provide voluntarily</p>
+              <p style={{ ...bodyStyle, marginBottom: '16px' }}>
+                If you contact us (e.g., email), we receive the information you send (such as your name, email address, and message content).
+              </p>
+              <p style={{ ...bodyStyle, fontWeight: 600, color: '#FFFFFF', marginBottom: '6px' }}>App usage data (analytics)</p>
+              <p style={{ ...bodyStyle, marginBottom: '8px' }}>
+                The FAST30 apps use privacy-focused analytics tools to understand how the app is used. This may include events such as app opens, workouts started, workouts completed, and feature interactions.
+              </p>
+              <p style={{ ...bodyStyle, marginBottom: '16px' }}>
+                This data is anonymous, not linked to a specific user, and not used to identify individuals.
+              </p>
+              <p style={{ ...bodyStyle, fontWeight: 600, color: '#FFFFFF', marginBottom: '6px' }}>Optional profile information (stored locally)</p>
+              <p style={{ ...bodyStyle, marginBottom: '8px' }}>
+                Some FAST30 apps allow you to optionally enter information such as age or gender.
+              </p>
+              <p style={{ ...bodyStyle, marginBottom: '4px' }}>This information is:</p>
+              <ul style={{ ...listStyle, marginBottom: '16px' }}>
+                <li>Stored only on your device</li>
+                <li>Not transmitted to our servers</li>
+                <li>Used solely to personalize your experience within the app</li>
               </ul>
+              <p style={{ ...bodyStyle, fontWeight: 600, color: '#FFFFFF', marginBottom: '6px' }}>Basic website data</p>
+              <p style={bodyStyle}>
+                Like most websites, our hosting/provider tools may automatically log limited technical data (e.g., device type, browser, approximate location, and pages visited). This is used for security and performance.
+              </p>
             </section>
 
             <section style={sectionStyle}>
               <h2 style={sectionTitleStyle}>How We Use Information</h2>
-              <p style={bodyWithMarginStyle}>
-                We use information to:
-              </p>
+              <p style={bodyWithMarginStyle}>We use information to:</p>
               <ul style={listStyle}>
+                <li>Provide and improve app functionality</li>
+                <li>Understand app usage and performance</li>
                 <li>Respond to inquiries and support requests</li>
                 <li>Maintain, secure, and improve the website</li>
-                <li>Understand website performance and usage in aggregate</li>
               </ul>
+            </section>
+
+            <section style={sectionStyle}>
+              <h2 style={sectionTitleStyle}>In-App Purchases</h2>
+              <p style={bodyStyle}>
+                FAST30 apps may offer optional in-app purchases. All payments are processed by Apple. FAST30 does not receive or store your payment information.
+              </p>
             </section>
 
             <section style={sectionStyle}>
               <h2 style={sectionTitleStyle}>What We Don't Do</h2>
               <ul style={listStyle}>
-                <li>We do not require user accounts for the website</li>
+                <li>We do not require user accounts</li>
                 <li>We do not sell personal information</li>
-                <li>We do not knowingly collect personal information from children without appropriate consent</li>
+                <li>We do not track users across third-party apps or websites</li>
+                <li>We do not knowingly collect personal information from children</li>
               </ul>
             </section>
 
             <section style={sectionStyle}>
               <h2 style={sectionTitleStyle}>Sharing</h2>
               <p style={bodyStyle}>
-                We may share information with service providers who help operate the website (e.g., hosting, security, analytics), only as needed and under appropriate protections.
+                We may share limited information with service providers that help operate the app or website (such as analytics or hosting providers), only as necessary and under appropriate protections.
               </p>
             </section>
 
             <section style={sectionStyle}>
               <h2 style={sectionTitleStyle}>Data Retention</h2>
-              <p style={bodyStyle}>
+              <p style={{ ...bodyStyle, marginBottom: '8px' }}>
                 We retain contact messages and related correspondence only as long as needed to respond and for legitimate business purposes.
+              </p>
+              <p style={bodyStyle}>
+                Anonymous analytics data may be retained in aggregate form.
               </p>
             </section>
 

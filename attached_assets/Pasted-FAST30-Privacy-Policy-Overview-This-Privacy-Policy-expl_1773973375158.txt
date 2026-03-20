@@ -1,0 +1,42 @@
+FAST30™ — Privacy Policy
+Overview
+This Privacy Policy explains how FAST30™ handles information for both the FAST30 mobile applications and the FAST30 website.
+Information We Collect
+Information you provide voluntarily
+If you contact us (e.g., email), we receive the information you send (such as your name, email address, and message content).
+App usage data (analytics)
+The FAST30 apps use privacy-focused analytics tools to understand how the app is used. This may include events such as app opens, workouts started, workouts completed, and feature interactions.
+This data is anonymous, not linked to a specific user, and not used to identify individuals.
+Optional profile information (stored locally)
+Some FAST30 apps allow you to optionally enter information such as age or gender.
+This information is:
+Stored only on your device
+Not transmitted to our servers
+Used solely to personalize your experience within the app
+Basic website data
+Like most websites, our hosting/provider tools may automatically log limited technical data (e.g., device type, browser, approximate location, and pages visited). This is used for security and performance.
+How We Use Information
+We use information to:
+Provide and improve app functionality
+Understand app usage and performance
+Respond to inquiries and support requests
+Maintain, secure, and improve the website
+In-App Purchases
+FAST30 apps may offer optional in-app purchases.
+All payments are processed by Apple. FAST30 does not receive or store your payment information.
+What We Don’t Do
+We do not require user accounts
+We do not sell personal information
+We do not track users across third-party apps or websites
+We do not knowingly collect personal information from children
+Sharing
+We may share limited information with service providers that help operate the app or website (such as analytics or hosting providers), only as necessary and under appropriate protections.
+Data Retention
+We retain contact messages and related correspondence only as long as needed to respond and for legitimate business purposes.
+Anonymous analytics data may be retained in aggregate form.
+Your Choices
+You can contact us to request access, correction, or deletion of information you provided directly via email.
+Contact
+Privacy questions: hello@fast30apps.com
+Last updated
+February 7, 2026
